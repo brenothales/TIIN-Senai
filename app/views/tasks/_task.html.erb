@@ -1,13 +1,27 @@
-<tr>
-  <td><%= task.content %></td>
-  <td><%= task.state %> </td>
-  <td><%= link_to 'Show', task %></td>
-  <td><%= link_to 'Edit', edit_task_path(task) %></td>
-  <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  <% if task.state == 'doing' %>
-	  <td><%= link_to 'Mark as To do', change_task_path(task, state: "to_do"), method: :put %></td>
-	  <td><%= link_to 'Mark as Done', change_task_path(task, state: "done"), method: :put %></td>
-  <% else %>
-	  <td><%= link_to 'Mark as Doing', change_task_path(task, state: "doing"), method: :put %></td>
-  <% end %>
-</tr>
+<!--<tr>-->
+<!--  <td><%= task.content %></td>-->
+<!--  <td><%= task.state %> </td>-->
+<!--  <td><%= link_to 'Show', task %></td>-->
+<!--  <td><%= link_to 'Edit', edit_task_path(task) %></td>-->
+<!--  <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+<!--  <% if task.state == 'doing' %>-->
+<!--	  <td><%= link_to 'Mark as To do', change_task_path(task, state: "to_do"), method: :put %></td>-->
+<!--	  <td><%= link_to 'Mark as Done', change_task_path(task, state: "done"), method: :put %></td>-->
+<!--  <% else %>-->
+<!--	  <td><%= link_to 'Mark as Doing', change_task_path(task, state: "doing"), method: :put %></td>-->
+<!--  <% end %>-->
+<!--</tr>-->
+
+<div class="panel panel-info">
+    <div class="panel-heading">Created <%= time_ago_in_words(task.created_at) %> ago</div>
+    <div class="panel-body"> <%= task.content %> </div>
+    <div class="panel-footer text-center">
+      <% if task.state == 'doing' %>
+	    <%= link_to 'Mark as To do', change_task_path(task, state: "to_do"), method: :put %>
+	    <%= link_to 'Mark as Done', change_task_path(task, state: "done"), method: :put %>
+    <% else %>
+	    <%= link_to 'Mark as Doing', change_task_path(task, state: "doing"), method: :put %>
+    <% end %>
+    </div>
+</div>
+

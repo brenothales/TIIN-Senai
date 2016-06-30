@@ -1,3 +1,11 @@
 // Place all the styles related to the Tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+    background-image: url(https://pixabay.com/static/uploads/photo/2015/12/08/00/26/desk-1081708_960_720.jpg);
+    // background-image: image-url("345.jpg");
+    // background-image: url(https://www.google.com.br/url?sa=i&rct=j&q=&esrc=s&source=imgres&cd=&cad=rja&uact=8&ved=0ahUKEwje6736kdDNAhVClJAKHS1TDqAQjRwIBw&url=https%3A%2F%2Fwww.123rf.com%2Fphoto_44197104_blank-office-desk-background-with-copy-space-for-your-text-top-view-business-and-office-supplies-wit.html&psig=AFQjCNEXwQW_kUbRB0yff7fYnpdVypCydg&ust=1467389486660277https://www.google.com.br/url?sa=i&rct=j&q=&esrc=s&source=imgres&cd=&cad=rja&uact=8&ved=0ahUKEwje6736kdDNAhVClJAKHS1TDqAQjRwIBw&url=https%3A%2F%2Fwww.123rf.com%2Fphoto_44197104_blank-office-desk-background-with-copy-space-for-your-text-top-view-business-and-office-supplies-wit.html&psig=AFQjCNEXwQW_kUbRB0yff7fYnpdVypCydg&ust=1467389486660277);
+    // background-image: url(http://previews.123rf.com/images/alexbrylov/alexbrylov1508/alexbrylov150800109/44197104-Blank-office-desk-background-with-copy-space-for-your-text-Top-view-Business-and-office-supplies-wit-Stock-Photo.jpg);
+    background-size: cover;
+}
