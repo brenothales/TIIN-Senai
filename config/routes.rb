@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :posts
   
-  
+  get 'test' => 'home#test'
   get 'about' => 'home#about'
   
   root 'home#index'
